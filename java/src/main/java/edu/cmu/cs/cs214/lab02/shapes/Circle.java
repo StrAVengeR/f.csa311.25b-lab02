@@ -5,7 +5,7 @@ package edu.cmu.cs.cs214.lab02.shapes;
  * Битүүмжлэл: radius нь private, зөвхөн interface-ын метод ашиглана
  */
 public class Circle implements Shape {
-    // ✅ PRIVATE - мэдээлэл нууцлах
+    //  PRIVATE - мэдээлэл нууцлах
     private final double radius;
 
     public Circle(double radius) {

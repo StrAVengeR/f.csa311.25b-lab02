@@ -13,13 +13,13 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("=== Битүүмжлэл ба Мэдээлэл Нууцлалын Лаборатори ===\n");
         
-        // ✅ Shape төрлөөр зарлах - Polymorphism
+        //  Shape төрлөөр зарлах - Polymorphism
         // Тодорхой класс биш, ерөнхий interface ашиглах
         Shape rectangle = new Rectangle(2, 3);
         Shape circle = new Circle(5);
         Shape square = new Square(4);
         
-        // ✅ Ижил Renderer өөр өөр дүрстэй ажиллана
+        //  Ижил Renderer өөр өөр дүрстэй ажиллана
         System.out.println("1. Rectangle зурах:");
         Renderer renderer1 = new Renderer(rectangle);
         renderer1.draw();
@@ -32,7 +32,7 @@ public class Main {
         Renderer renderer3 = new Renderer(square);
         renderer3.draw();
         
-        // ✅ Давуу тал: Шинэ дүрс (Triangle, Hexagon) нэмэхэд Renderer өөрчлөгдөхгүй!
+        //  Давуу тал: Шинэ дүрс (Triangle, Hexagon) нэмэхэд Renderer өөрчлөгдөхгүй!
         System.out.println("\n=== Битүүмжлэлийн давуу тал ===");
         System.out.println("✓ Renderer нь зөвхөн Shape interface-тай ажиллана");
         System.out.println("✓ Дүрсүүдийн дотоод өгөгдөл (radius, width, height) нуугдсан");
