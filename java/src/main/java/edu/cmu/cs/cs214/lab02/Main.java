@@ -11,7 +11,7 @@ import edu.cmu.cs.cs214.lab02.shapes.Shape;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("=== Битүүмжлэл ба Мэдээлэл Нууцлалын Лаборатори ===\n");
+        System.out.println("=== Bituumjlel lab ===\n");
         
         //  Shape төрлөөр зарлах - Polymorphism
         // Тодорхой класс биш, ерөнхий interface ашиглах
@@ -20,22 +20,22 @@ public class Main {
         Shape square = new Square(4);
         
         //  Ижил Renderer өөр өөр дүрстэй ажиллана
-        System.out.println("1. Rectangle зурах:");
+        System.out.println("1. Rectangle zurah:");
         Renderer renderer1 = new Renderer(rectangle);
         renderer1.draw();
         
-        System.out.println("\n2. Circle зурах:");
+        System.out.println("\n2. Circle zurah:");
         Renderer renderer2 = new Renderer(circle);
         renderer2.draw();
         
-        System.out.println("\n3. Square зурах:");
+        System.out.println("\n3. Square zurah:");
         Renderer renderer3 = new Renderer(square);
         renderer3.draw();
         
         //  Давуу тал: Шинэ дүрс (Triangle, Hexagon) нэмэхэд Renderer өөрчлөгдөхгүй!
-        System.out.println("\n=== Битүүмжлэлийн давуу тал ===");
-        System.out.println("✓ Renderer нь зөвхөн Shape interface-тай ажиллана");
-        System.out.println("✓ Дүрсүүдийн дотоод өгөгдөл (radius, width, height) нуугдсан");
-        System.out.println("✓ Шинэ дүрс нэмэхэд Renderer өөрчлөгдөхгүй");
+        System.out.println("\n=== Bituumjleliin davuu tal ===");
+        System.out.println("✓ Renderer ni zuvhun Shape interface-tai ajillana");
+        System.out.println("✓ Dursuudiin dotood ugugdul (radius, width, height) nuugdsan");
+        System.out.println("✓ Shine durs nemehed Renderer uurchlugduhgui");
     }
 }
