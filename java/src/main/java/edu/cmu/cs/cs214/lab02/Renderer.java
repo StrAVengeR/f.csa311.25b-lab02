@@ -1,19 +1,31 @@
 package edu.cmu.cs.cs214.lab02;
 
-import edu.cmu.cs.cs214.lab02.shapes.*;
+import edu.cmu.cs.cs214.lab02.shapes.Shape;
 
+/**
+ * Дүрс зурах класс
+ * Битүүмжлэл: Зөвхөн Shape interface-тай ажиллана
+ * Rectangle, Circle гэх мэт тодорхой классаас хамаарахгүй
+ */
 public class Renderer {
-    public Rectangle rectangle;
+    //  Shape interface ашиглах - Rectangle биш!
+    // Мэдээлэл нууцлал: тодорхой дүрсний дотоод бүтцийг мэдэхгүй
+    private final Shape shape;
     
-    Renderer(Rectangle rectangle) {
-        this.rectangle = rectangle;
+    /**
+     * Renderer үүсгэгч
+     * @param shape Ямар ч дүрс (Rectangle, Circle, Square, гэх мэт)
+     */
+    public Renderer(Shape shape) {
+        this.shape = shape;
     }
-
-    void draw() {
-        double area = rectangle.getArea();
-
-        // assume implementation
-
-        System.out.println("Shape printed\n" + "Its area is " + area);
+    
+    /**
+     * Дүрсийг зурах
+     * Зөвхөн Shape interface-ын методыг ашиглана
+     */
+    public void draw() {
+        System.out.println("Drawing: " + shape.getDescription());
+        System.out.println("Area: " + shape.getArea());
     }
 }
